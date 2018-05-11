@@ -4,6 +4,9 @@
     width: 460px;
     height: 660px;
     background-color: orange;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
 }
 
 #display {

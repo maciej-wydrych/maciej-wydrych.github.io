@@ -2,48 +2,121 @@
 
 $(function () {
 
-    var activeDisplay = document.getElementById('active-display');
-    var memoryDisplay = document.getElementById('memory-display');
+    var activeDisplay = $('#active-display');
+    var memoryDisplay = $('#memory-display');
     var action;
-    var outcome;;
+    var outcome;
+    var periodCounter = 0;
+    var displayEmpty = true;
+    var newNumber = false;
+    var lastAction;
+    var anotherEquation = false;
+    var percentActive = false;
+
+    function animateDisplay() {
+        $('.display-content').animate({
+            opacity: '0.6'
+        }, 75);
+        $('.display-content').animate({
+            opacity: '1'
+        }, 75);
+    };
 
     $('.digits').click(function () {
-            var value = $(this).val();
-            $('#active-display').append(value);
+        if (newNumber == true) {
+            activeDisplay.html('');
+        };
+        var value = $(this).val();
+        activeDisplay.append(value);
+        animateDisplay();
+        displayEmpty = false;
+        newNumber = false;
+        percentActive = false;
     });
 
     $('#period-button').click(function () {
-        $('#active-display').append('.');
+        if (periodCounter == 0) {
+            if (displayEmpty == true) {
+                activeDisplay.html('0' + '.');
+                //                activeDisplay.append('.');
+            } else if (displayEmpty == false) {
+                activeDisplay.append('.')
+            };
+            animateDisplay();
+            periodCounter += 1;
+            newNumber = false;
+            percentActive = false;
+        };
     });
 
     $('.operators').click(function () {
         action = $(this).val();
-        $('#memory-display').append(activeDisplay.innerHTML);
-        $('#memory-display').append(action);
-        activeDisplay.innerHTML = "";
+        if (displayEmpty == true) {
+            memoryDisplay.append('0' + action);
+        } else if (displayEmpty == false) {
+            memoryDisplay.append(activeDisplay.html() + action)
+        }
+        animateDisplay();
+        newNumber = true;
+        displayEmpty = true;
+        periodCounter = 0;
+        lastAction = '';
+        anotherEquation = false;
+        //        percentActive = true;
+        //        console.log(percentActive);
     });
 
     $('#percent-button').click(function () {
-        var percentAction = eval("activeDisplay.innerHTML * 0.01");
-        $('#memory-display').append(percentAction);
-        activeDisplay.innerHTML = "";
+        //        if (percentActive == true) {
+        //            var percentAction = eval('activeDisplay.html() * 0.01');
+        //            console.log(percentAction);
+        //            activeDisplay.html(percentAction);
+        //            solveEquation()
+        //        }
+
+        //        console.log(percentActive);
+        var percentAction = eval("activeDisplay.html() * 0.01");
+        activeDisplay.html(percentAction);
+        solveEquation();
+        animateDisplay()
     })
 
     $('#equals-button').click(function () {
-        $('#memory-display').append(activeDisplay.innerHTML);
-        outcome = eval(memoryDisplay.innerHTML);
-        activeDisplay.innerHTML = outcome;
+        solveEquation();
+        animateDisplay()
     });
 
+    function solveEquation() {
+        if (anotherEquation == true) {
+            memoryDisplay.append(activeDisplay.html() + lastAction);
+        } else if (anotherEquation == false) {
+            lastAction = action + activeDisplay.html();
+            memoryDisplay.append(activeDisplay.html());
+        };
+        outcome = eval(memoryDisplay.html());
+        activeDisplay.html(outcome);
+        memoryDisplay.html('');
+        anotherEquation = true;
+        newNumber = true;
+        periodCounter = 0;
+    }
+
     $('#erase-button').click(function () {
-        $('#active-display').empty();
+        activeDisplay.empty();
+        animateDisplay();
     });
 
     $('#clear-button').click(function () {
-        $('#active-display').empty();
-        $('#memory-display').empty();
+        activeDisplay.empty();
+        memoryDisplay.empty();
         action = "";
         outcome = "";
+        periodCounter = 0;
+        displayEmpty = true;
+        newNumber = false;
+        lastAction = '';
+        anotherEquation = false;
+        percentActive = false;
     });
 
 })
