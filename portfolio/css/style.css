@@ -159,6 +159,7 @@ a {
 
 #skills h2 {
     margin-top: 40px;
+    padding-top: 40px;
 }
 
 #skills figure {
@@ -171,6 +172,7 @@ a {
 
 #portfolio h2 {
     margin-top: 40px;
+    padding-top: 40px;
 }
 
 #portfolio-container {
@@ -255,11 +257,13 @@ a {
 #form {
     width: 50%;
     float: left;
+    padding-top: 20px;
 }
 
 #address h2 {
     text-align: left;
     font-size: 38px;
+    
 }
 
 address {
