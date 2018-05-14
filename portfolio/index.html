@@ -1,147 +1,247 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <!--GOOGLE FONTS-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto:300,400,700&amp;subset=latin-ext" rel="stylesheet">
-    <!--FONT-AWESOME-->
-    <link rel="stylesheet" href="css/fontawesome-all.min.css">
-    <!--MAIN STYLES-->
+    <title>Maciej Wydrych's Site</title>
+    <meta charset="utf-8">
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900|Secular+One&amp;subset=latin-ext" rel="stylesheet">
+    <!--FONTAWESOME-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--RESPONSIVITY-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--BOOTRSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <!--STYLES-->
     <link rel="stylesheet" href="css/style.css">
-    <title>Moje Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <!--   <a href=""><i class="fab fa-accessible-icon"></i></a>-->
-    <div id="header-container">
-        <nav id="main-nav">
-            <ul>
-                <li class="menu-item"><a href="#about">o mnie</a></li>
-                <li class="menu-item"><a href="#skills">umiejętności</a></li>
-                <li class="menu-item"><a href="#portfolio">portfolio</a></li>
-                <li class="menu-item"><a href="#address">kontakt</a></li>
+    <!--NAVIGATION-START-->
+    <nav id="main-nav" class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#">Maciej Wydrych's Site</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto w-100 justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">O mnie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Umiejętności</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Kontakt</a>
+                </li>
             </ul>
-        </nav>
-
-        <header id="main-header">
-            <div class="header-content">
-                <h1>Maciej <span>Wydrych</span></h1>
-                <h2>Front-End Developer</h2>
-            </div>
-        </header>
-    </div>
+        </div>
+    </nav>
+    <!--NAVIGATION-END-->
+    <!--HEADER-START-->
+    <header id="main-header">
+        <div id="main-header-content" class="text-center">
+            <h1>Maciej <span>Wydrych</span></h1>
+            <h2 class="font-italic  align-middle">Front-End Developer</h2>
+        </div>
+    </header>
+    <!--HEADER-END-->
+    <!--ABOUT-START-->
     <section id="about">
-        <h2>O <span>mnie</span></h2>
-        <figure><img src="img/maciej-wydrych.jpg" alt="maciej-wydrych.jpg"></figure>
-        <article>
-            <p>Z wykształcenia jestem chemikiem i materiałoznawcą, ale programowanie towarzyszyło mi przez cały okres nauki. Już w szkole podstawowej pisałem krótkie gry w prostych edytorach. W późniejszych latach dotyczyło ono głownie pisania makr. Moja przygoda z programowaniem zaczęła się na dobre, gdy by ułatwić sobie i innym pracę postanowiłem stworzyć formularz obsługujący normę badania stali. W tym celu musiałem samodzielnie nauczyć się języka Visual Basic for Applications. Efekt przerósł moje oczekiwania skracając czas badania o 75%. To popchnęło mnie do nauki innych języków programowania. Naukę rozpocząłem od jezyków Front-Endowych, jednak w przyszłości zamierzam rozszerzać swoje umiejętności o inne.</p>
-        </article>
+        <div class="container-fluid">
+            <div id="about-header" class="row text-center section-header">
+                <div class="col-12">
+                    <i class="fas fa-user section-icon"></i>
+                    <h2 class="text-uppercase">o mnie</h2>
+                </div>
+            </div>
+            <div id="about-content" class="row">
+                <div class="col-12 col-md-6">
+                    <div id="my-photo"></div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <article id="about-description">
+                        <p class="text-justify">
+                            Z wykształcenia jestem chemikiem i materiałoznawcą, ale programowanie towarzyszyło mi przez cały okres nauki. Już w szkole podstawowej pisałem krótkie gry w prostych edytorach. W późniejszych latach dotyczyło ono głownie pisania makr. Moja przygoda z programowaniem zaczęła się na dobre, gdy by ułatwić sobie i innym pracę postanowiłem stworzyć formularz obsługujący normę badania stali. W tym celu musiałem samodzielnie nauczyć się języka Visual Basic for Applications. Efekt przerósł moje oczekiwania skracając czas badania o 75%. To popchnęło mnie do nauki innych języków programowania. Naukę rozpocząłem od jezyków Front-Endowych, jednak w przyszłości zamierzam rozszerzać swoje umiejętności o inne.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
     </section>
-
+    <!--ABOUT-END-->
+    <!--SKILLS-START-->
     <section id="skills">
-        <h2>Moje <span>umiejętności</span></h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto est ex facilis autem aliquid corporis eos porro unde natus dicta, vitae nemo nisi in blanditiis atque hic incidunt consectetur expedita, excepturi possimus odio, nam error illo soluta consequuntur. Sequi, dolores?</p>
-        <figure><img src="icons/html5.png" alt="html5.png">
-            <figcaption><br>HTML5</figcaption>
-        </figure>
-        <figure><img src="icons/css3.png" alt="css3.png">
-            <figcaption><br>CSS3</figcaption>
-        </figure>
-        <figure><img src="icons/js.png" alt="js.png">
-            <figcaption><br>JavaScript</figcaption>
-        </figure>
-        <figure><img src="icons/jquery.png" alt="jquery.png">
-            <figcaption><br>jQuery</figcaption>
-        </figure>
-        <figure><img src="icons/ajax.jpg" alt="ajax.jpg">
-            <figcaption><br>AJAX</figcaption>
-        </figure>
+        <div class="container">
+            <div id="skills-header" class="row text-center section-header">
+                <div class="col-12">
+                    <i class="far fa-keyboard section-icon"></i>
+                    <h2 class="text-uppercase">umiejętności</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-center font-italic">Front-End</h3>
+                </div>
+            </div>
+            <div id="front-end-skills" class="row text-center p-3">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <figure><img src="img/skills/html5.png" alt="html5.png">
+                        <figcaption><br>HTML5</figcaption>
+                    </figure>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <figure><img src="img/skills/css3.png" alt="css3.png">
+                        <figcaption><br>CSS3</figcaption>
+                    </figure>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <figure><img src="img/skills/js.png" alt="js.png">
+                        <figcaption><br>JavaScript</figcaption>
+                    </figure>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <figure><img src="img/skills/jquery.png" alt="jquery.png">
+                        <figcaption><br>jQuery</figcaption>
+                    </figure>
+                </div>
+                <div class="col-6 col-md-4 col-lg-6">
+                    <figure><img src="img/skills/ajax.png" alt="ajax.png">
+                        <figcaption><br>AJAX</figcaption>
+                    </figure>
+                </div>
+                <div class="col-6 col-md-4 col-lg-6">
+                    <figure><img src="img/skills/bootstrap.png" alt="bootstrap.png">
+                        <figcaption><br>Bootstrap</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-center font-italic">Systemy kontroli wersji</h3>
+                </div>
+            </div>
+            <div id="version-control-skills" class="row text-center p-3">
+                <div class="col-12">
+                    <figure><img src="img/skills/git.png" alt="git.png">
+                        <figcaption><br>GIT</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
     </section>
-
+    <!--SKILLS-END-->
+    <!--PORTFOLIO-START-->
     <section id="portfolio">
-        <h2>Moje <span>portfolio</span></h2>
-        <div id="portfolio-container">
-            <div id="portfolio-item-1" class="portfolio-item">
-                <div class="item-overlay">
-                    <div class="item-content">
-                        <div class="item-content-inner">
-                            <h3>Kurs wymiany Bitcoin-PLN</h3>
-                            <p>Wciśnięcie przycisku powoduje pobranie aktualnych danych o kursie wymiany Bitcoin-PLN z serwera https://blockchain.info/pl/ticker i wyświetlenie ich na stronie wraz z datą pobrania i porównaniem do ostatnich pobranych danych.
-                                <h4>Wykorzystane technologie:</h4>
-                                <p>HTML5, CSS3, RWD, JavaScript, jQuery, AJAX</p>
-                                <a href="https://maciej-wydrych.github.io/zadania-domowe/zadanie-8781-kurs-bitcoin-click/"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
+        <div class="container">
+            <div id="portfolio-header" class="row text-center section-header">
+                <div class="col-12">
+                    <i class="fab fa-leanpub section-icon"></i>
+                    <h2 class="text-uppercase">portfolio</h2>
                 </div>
             </div>
-            <div id="portfolio-item-2" class="portfolio-item">
-                <div class="item-overlay">
-                    <div class="item-content">
-                        <div class="item-content-inner">
-                            <h3>Kalkulator</h3>
-                            <p>Kalkulator obsługujący podstawowe funkcje matematycze. W celu wizualnego upodobnienia go do rzeczywistego kalkulatora, dodano efekt wciskania przycisków oraz efekt spadku napięcia na ekranie podczas wciskania przycisków.</p>
-                            <h4>Wykorzystane technologie:</h4>
-                            <p>HTML5, CSS3, JavaScript, jQuery</p>
-                            <a href="https://maciej-wydrych.github.io/zadania-domowe/zadanie-8510-kalkulator/index.html"><i class="fas fa-link"></i></a>
+            <div id="portfolio-collection" class="row">
+                <div class="col-12 col-md-6 col-lg-4 portfolio-frame">
+                    <div class="portfolio-image-frame">
+                        <div id="portfolio-img-1" class="portfolio-images">
+                            <div class="mask text-center">
+                                <a href="https://maciej-wydrych.github.io/projects/slider/index.html"><i class="fas fa-link"></i></a>
+                            </div>
                         </div>
                     </div>
+                    <div class="portfolio-description text-center">
+                        <h4>Slider</h4>
+                        <p class="font-italic">Pokaz slajdów - płynne przełączanie zdjęć</p>
+                    </div>
                 </div>
-            </div>
-            <div id="portfolio-item-3" class="portfolio-item">
-                <div class="item-overlay">
-                    <div class="item-content">
-                        <div class="item-content-inner">
-                            <h3>Lorem ipsum</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis debitis veritatis ratione vel, consectetur est asperiores eius minus ab officiis!</p>
-                            <h4>Wykorzystane technologie:</h4>
-                            <p>HTML5, CSS3, RWD, Bootstrap, JavaScript, jQuery</p>
-                            <i class="fas fa-link"></i>
+                <div class="col-12 col-md-6 col-lg-4 portfolio-frame">
+                    <div class="portfolio-image-frame">
+                        <div id="portfolio-img-2" class="portfolio-images">
+                            <div class="mask text-center">
+                                <a href="https://maciej-wydrych.github.io/projects/calculator/index.html"><i class="fas fa-link"></i></a>
+                            </div>
                         </div>
+                    </div>
+                    <div class="portfolio-description">
+                        <h4>Kalkulator</h4>
+                        <p class="font-italic">Model prostego kalkulatora</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 portfolio-frame">
+                    <div class="portfolio-image-frame">
+                        <div id="portfolio-img-3" class="portfolio-images">
+                            <div class="mask text-center">
+                                <a href="https://maciej-wydrych.github.io/projects/bitcoin/index.html"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-description">
+                        <h4>Kurs wymiany Bitcoin</h4>
+                        <p class="font-italic">Pobranie danych z serwera o aktualnym kursie Bitcoina</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <!--PORTFOLIO-END-->
+    <!--CONTACT-FORM-START-->
     <section id="contact">
-        <div id="address">
-            <h2>Maciej <span>Wydrych</span></h2>
-            <address>
-                ul. Bora-Komorowskiego 21/112<br>
-                03-982 Warszawa<br><br>
-                tel. 698-040-217<br>
-                e-mail: <a href="mailto:m.wydrych@gmail.com">m.wydrych@gmail.com</a>
-            </address>
-            <div id="contact-social-icons">
-                <a href="https://www.linkedin.com/in/maciejwydrych/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/maciej-wydrych"><i class="fab fa-github"></i></a>
-                <a id="replit" href="https://repl.it/@cpthardy/">
-                    <div>repl.it</div>
-                </a>
+        <div class="container">
+            <div id="contact-header" class="row text-center section-header">
+                <div class="col-12">
+                    <i class="far fa-address-card section-icon"></i>
+                    <h2 class="text-uppercase">kontakt</h2>
+                </div>
             </div>
-        </div>
-        <div id="form">
             <form action="https://formspree.io/m.wydrych@gmail.com" method="post" autocomplete="on">
-                <input type="text" id="name" name="Imię" placeholder="Imię i nazwisko"><br>
-                <input type="email" id="email" name="email" placeholder="E-mail"><br>
-                <textarea name="wiadomość" id="wiadomosc" cols="30" rows="5" placeholder="Treść wiadomości"></textarea><br>
-                <input type="submit" id="submit" value="WYŚLIJ">
-
+            <div class="row">
+                <div class="col-12 col-lg-4 my-contact">
+                    <address class="text-center">
+                        <h2>Maciej <span>Wydrych</span></h2>
+                        <p><i class="fas fa-home"></i> ul. Bora-Komorowskiego 21/112 <br>
+                        03-982 Warszawa</p>
+                        <p><i class="fas fa-phone"></i> +48-698-040-217</p>
+                        <p><i class="fas fa-envelope"></i><a id="email-link" href="mailto:m.wydrych@gmail.com"> m.wydrych@gmail.com</a></p>
+                    </address>
+                    <div id="social-links" class="text-center">
+                        <a href="https://www.linkedin.com/in/maciejwydrych/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/maciej-wydrych"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                    <div class="col-12 col-md-6 col-lg-4 form">
+                        <input type="text" name="Imię i nazwisko" class="form-control form-control-lg input" placeholder="Imię i nazwisko">
+                        <input type="email" name="Email" class="form-control form-control-lg input" placeholder="E-mail">
+                        <input type="tel" name="Telefon" class="form-control form-control-lg input last-input" placeholder="Nr telefonu">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 form">
+                        <textarea name="Wiadomość" id="" cols="30" rows="6" class="form-control form-control-lg textarea" placeholder="Wiadomość"></textarea>
+                    </div>
+                
+            </div>
+            <div class="row p-3">
+                <div class="col-12 text-center">
+                    <input type="submit" class="btn submit" value="Wyślij wiadomość">
+                </div>
+                
+            </div>
             </form>
         </div>
     </section>
-    <footer id="footer">
-        <p>Copyright©Maciej Wydrych</p>
+    <!--CONTACT-FORM-END-->
+    <!--FOOTER-FORM-START-->
+    <footer id="footer" class="text-center">
+        <p>Copyright&copy;Maciej Wydrych</p>
     </footer>
+    <!--FOOTER-FORM-END-->
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/smoothScroll.js"></script>
+    <!--SCRIPTS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-
-
-
 </body>
 
 </html>
