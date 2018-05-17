@@ -141,6 +141,11 @@ section {
     background-position: center center;
 }
 
+#portfolio-img-4 {
+    background-image: url(../img/portfolio/memory.png);
+    background-position: center center;
+}
+
 .mask {
     width: 100%;
     height: 100%;
