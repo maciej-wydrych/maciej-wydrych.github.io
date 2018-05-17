@@ -1,35 +1,90 @@
 'use strict'
 
-var checkedTiles = 0;
-var firstTile;
-var secondTile;
-var score = 0;
-
 $(function () {
+    //RANDOM ROW CONFIGURATION
+    var rowsNumbers = [];
+    var rowNumber;
+    var rowNumberCheck = Boolean;
+    
+    $('.row').each(function() {
+        do {
+            rowNumber = Math.floor(Math.random() * 6) * 155;
+            rowNumberCheck = rowsNumbers.includes(rowNumber);
+        } while (rowNumberCheck == true);
+        rowsNumbers.push(rowNumber);
+        $(this).css('top', rowNumber + 'px')
+    });
+    
+    //RANDOM TILE CONFIGURATION
+    var tilesNumbers = [];
+    var tileNumber;
+    var tileNumberCheck = Boolean;
+
+    $('.row').each(function () {
+        $(this).find('.kafelek').each(function () {
+            do {
+                tileNumber = Math.floor(Math.random() * 6) * 155;
+                tileNumberCheck = tilesNumbers.includes(tileNumber);
+            } while (tileNumberCheck == true);
+            tilesNumbers.push(tileNumber);
+            $(this).css('left', tileNumber + 'px')
+        });
+        tilesNumbers = [];
+    });
+
+    //SWITCH PLAYER
+    var player1 = $('#player1');
+    var player2 = $('#player2');
+    var activePlayer = player1
+    
+    function switchPlayer () {
+        if (activePlayer == player1) {
+            activePlayer = player2;
+        } else if (activePlayer == player2) {
+            activePlayer = player1;
+        }
+    }
+    
+    //SELECTED TILE CHECK
+    var checkedTiles = 0;
+    var firstTile;
+    var secondTile;
+    var score = 0;
+
     $('.mask').click(function () {
         tileCheck(this);
     });
 
     function tileCheck(tile) {
         if (checkedTiles == 0) {
-            $(tile).animate({opacity: '0'}, 300);
+            $(tile).animate({
+                opacity: '0'
+            }, 300);
             checkedTiles += 1;
             firstTile = tile.parentElement;
             //            w jquery .parent()
-            console.log(firstTile.classList[1]);
+//            console.log(firstTile.classList[1]);
         } else if (checkedTiles == 1) {
-            $(tile).animate({opacity: '0'}, 300);
+            $(tile).animate({
+                opacity: '0'
+            }, 300);
             checkedTiles += 1;
             secondTile = tile.parentElement;
-            console.log(secondTile.classList[1]);
+//            console.log(secondTile.classList[1]);
             if (firstTile.classList[1] == secondTile.classList[1]) {
-//                kafelki są takie same
+                //                kafelki są takie same
                 score += 1;
-                $('#player1').html(score);
+                activePlayer.html(score);
             } else {
-//                kafelki są różne
-                $(firstTile).find('.mask').animate({opacity: '1'}, 600);
-                $(secondTile).find('.mask').animate({opacity: '1'}, 300);
+                //                kafelki są różne
+                $(firstTile).find('.mask').animate({
+                    opacity: '1'
+                }, 1000);
+                $(secondTile).find('.mask').animate({
+                    opacity: '1'
+                }, 1000);
+                switchPlayer();
+                console.log (activePlayer)
             };
             checkedTiles = 0;
         };

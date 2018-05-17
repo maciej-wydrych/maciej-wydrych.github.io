@@ -1,9 +1,16 @@
 #score-board {
-    height: 100px;
+    position: absolute;
+    height: 300px;
     width: 300px;
     background-color: #000;
     font-size: 30px;
     font-weight: bold;
+    top: 0;
+}
+
+h2 {
+    color: #fff;
+    font-family: 'Pacifico', cursive;
 }
 
 #player1 {
@@ -15,51 +22,114 @@
     top: 25px;
 }
 
+#player2 {
+    position: relative;
+    height: 50px;
+    width: 100px;
+    background-color: #fff;
+    margin-left: 25px;
+    top: 75px;
+}
+
+#container{
+    width: 925px;
+    height: 930px;
+    position: relative;
+    left: 40%
+}
+
+.row {
+    position: absolute;
+    width: 925px;
+    height: 155px;
+/*    background-color: #666;*/
+}
 .kafelek {
-    height: 200px;
-    width: 200px;
+    position: absolute;
+    height: 150px;
+    width: 150px;
     background-color: #fff;
     display: inline-block;
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    
 }
 
 .mask {
     height: 100%;
     width: 100%;
-    background-color: #000;
+    background-color: #333;
+    border-radius: 15px
+}
+
+.bat{
+    background-image: url(../img/bat.png);
+}
+
+.blowfish{
+    background-image: url(../img/blowfish.png);
+}
+
+.buffalo{
+    background-image: url(../img/buffalo.png);
+}
+
+.camel{
+    background-image: url(../img/camel.png);
 }
 
 .cat{
     background-image: url(../img/cat.png);
 }
 
+.chick{
+    background-image: url(../img/chick.png);
+}
+
 .dog {
     background-image: url(../img/dog.png);
 }
 
-.cow {
-    background-image: url(../img/cow.png);
-}
-
-.frog {
-    background-image: url(../img/frog.png);
-}
-
-.mouse {
-    background-image: url(../img/mouse.png);
+.dragon{
+    background-image: url(../img/dragon.png);
 }
 
 .elephant {
     background-image: url(../img/elephant.png);
 }
 
-.fox {
-    background-image: url(../img/fox.png);
+.fish {
+    background-image: url(../img/fish.png);
 }
 
-.snake {
-    background-image: url(../img/snake.png);
+.goat {
+    background-image: url(../img/goat.png);
+}
+
+.koala {
+    background-image: url(../img/koala.png);
+}
+
+.mouse {
+    background-image: url(../img/mouse.png);
+}
+
+.octopus {
+    background-image: url(../img/octopus.png);
+}
+
+.owl {
+    background-image: url(../img/owl.png);
+}
+
+.ox {
+    background-image: url(../img/ox.png);
+}
+
+.pig {
+    background-image: url(../img/pig.png);
+}
+
+.whale {
+    background-image: url(../img/whale.png);
 }
