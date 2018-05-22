@@ -1,0 +1,41 @@
+body {
+    background-color: #666;
+}
+
+#title {
+    font-weight: bold;
+}
+
+#tytul-czas {
+    position: absolute;
+    left: 200px;
+}
+
+.czas {
+    position:absolute;
+    left: 200px;
+}
+
+#tytul-stawka {
+    position: absolute;
+    left: 400px;
+}
+
+.stawka {
+    position: absolute;
+    left: 400px;
+}
+
+#tytul-wyplata {
+    position: absolute;
+    left: 600px;
+}
+
+.wyplata {
+    position: absolute;
+    left: 600px;
+}
+
+#oblicz {
+    margin-top: 20px;
+}
