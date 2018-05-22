@@ -3,8 +3,8 @@
 $(function () {
     $('#oblicz').click(function () {
         var workaholic1 = $('#pracownik1');
-        var workaholic2 = $('#pracownik1');
-        var workaholic3 = $('#pracownik1');
+        var workaholic2 = $('#pracownik2');
+        var workaholic3 = $('#pracownik3');
 
         $('.czas').each(function () {
             var pracownik = $(this).parent();
