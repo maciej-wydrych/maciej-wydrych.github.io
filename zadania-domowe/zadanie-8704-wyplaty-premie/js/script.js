@@ -2,9 +2,9 @@
 
 $(function () {
     $('#oblicz').click(function () {
-        var workaholic1 = $('#pracownik1');
-        var workaholic2 = $('#pracownik2');
-        var workaholic3 = $('#pracownik3');
+        var workaholic1;
+        var workaholic2;
+        var workaholic3;
 
         $('.czas').each(function () {
             var pracownik = $(this).parent();
@@ -21,31 +21,36 @@ $(function () {
                 pracownik.find('.pracownik').css('backgroundColor', 'red')
             };
 
-            if (czas > parseInt(workaholic1.find('.czas').val())) {
+//            workaholic1 empty check
+            if (workaholic1 == undefined) {
+                workaholic1 = pracownik;
+//            workaholic1 value check
+            }else if (czas > parseInt(workaholic1.find('.czas').val())) {
                 workaholic3 = workaholic2;
                 workaholic2 = workaholic1;
                 workaholic1 = pracownik;
-                console.log(workaholic1.find('.pracownik').html())
+//            workaholic2 empty check
+            } else if (workaholic2 == undefined) {
+                workaholic2 = pracownik;  
+//            workaholic2 value check
             } else if (czas > parseInt(workaholic2.find('.czas').val())) {
                 workaholic3 = workaholic2;
                 workaholic2 = pracownik;
-                console.log(workaholic2.find('.pracownik').html())
+//            workaholic3 empty check
+            } else if (workaholic3 == undefined) {
+                workaholic3 = pracownik;
+//            workaholic3 value check
             } else if (czas > parseInt(workaholic3.find('.czas').val())) {
                 workaholic3 = pracownik;
-                console.log(workaholic3.find('.pracownik').html())
             };
-
+                
             wyplata.html(czas * stawka + premia);
         });
         
         $('#workaholic1').html("1. " + workaholic1.find('.pracownik').html());
         $('#workaholic2').html("2. " + workaholic2.find('.pracownik').html());
         $('#workaholic3').html("3. " + workaholic3.find('.pracownik').html());
-
+        
     }); 
-    
-    
-    
-    
-    
+
 });
