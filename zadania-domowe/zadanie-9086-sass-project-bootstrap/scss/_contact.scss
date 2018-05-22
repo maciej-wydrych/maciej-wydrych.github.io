@@ -1,0 +1,38 @@
+#contact {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url(../img/footer/world-map.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 150px;
+}
+
+#contact-header {
+    @include header-padding;
+    color: $white;
+}
+
+#contact-header p {
+    color: $white;
+}
+
+.input {
+    border: 0;
+    margin-bottom: 20px;
+    height: 50px;
+    font-size: 15px;
+    @include bold;
+}
+
+.textarea {
+    border: 0;
+    height: 190px;
+    font-size: 15px;
+    @include bold;
+}
+
+.submit {
+    height: 60px;
+    width: 200px;
+    background-color: $teal;
+    color: $white;
+    @include bold;
+}

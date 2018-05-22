@@ -1,0 +1,22 @@
+#main-nav {
+    transition: all 0.3s linear;
+}
+
+.nav-scroll{
+    background-color: rgba(16, 216, 216, 0.5);
+}
+
+#main-nav a{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 25px;
+    @include bold;
+}
+
+#main-nav #nav-title{
+    font-size: 30px;
+    
+}
+#main-nav a:hover {
+    color: #444;
+}

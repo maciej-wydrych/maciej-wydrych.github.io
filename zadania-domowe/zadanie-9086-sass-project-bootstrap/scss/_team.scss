@@ -1,0 +1,57 @@
+#team {
+    @include section-padding;
+}
+
+#team-header {
+    @include header-padding;
+}
+
+.profile-frame {
+    margin-bottom: 50px;
+}
+
+.profile-images {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+    @include image-position;
+}
+
+#profile-description {
+    padding-top: 30px;
+    text-align: center;
+}
+
+#profile-img-1 {
+    background-image: url(../img/team/man-1.jpg);
+}
+
+#profile-img-2 {
+    background-image: url(../img/team/man-2.jpg);
+}
+
+#profile-img-3 {
+    background-image: url(../img/team/woman-1.jpg);
+}
+
+
+#profile-social-links {
+    text-align:center;
+}
+
+.profile-icons {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #000;
+    color: $white;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.profile-icons:hover {
+    background-color: $teal;
+}

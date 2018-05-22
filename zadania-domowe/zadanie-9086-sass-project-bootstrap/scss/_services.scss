@@ -1,0 +1,31 @@
+#services {
+    @include section-padding;
+}
+
+#services-header {
+    @include header-padding;
+}
+
+.services-el{
+    text-align: center;
+}
+
+.services-icons {
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: $teal;
+    border: 1px solid $teal;
+    color: $white;
+    line-height: 80px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform .6s ease-in-out;
+}
+
+.services-icons:hover {
+    background-color: $white;
+    color: $teal;
+    transform: rotate(360deg);
+}
