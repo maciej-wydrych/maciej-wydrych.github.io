@@ -172,7 +172,7 @@ p {
   background-position: bottom center;
   background-repeat: no-repeat; }
 
-#profile-description {
+.profile-description {
   padding-top: 30px;
   text-align: center; }
 
@@ -185,7 +185,7 @@ p {
 #profile-img-3 {
   background-image: url(../img/team/woman-1.jpg); }
 
-#profile-social-links {
+.profile-social-links {
   text-align: center; }
 
 .profile-icons {
