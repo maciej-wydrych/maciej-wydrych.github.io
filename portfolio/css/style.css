@@ -29,6 +29,11 @@ section {
     transform: rotate(360deg);
 }
 
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
 #main-nav {
     transition: all 0.3s linear;
 }
