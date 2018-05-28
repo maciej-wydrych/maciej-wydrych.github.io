@@ -1,0 +1,58 @@
+#contact {
+/*    height: 500px;*/
+    background-image: url(../img/contact/keyboard-2923535_1920.jpg);
+    background-position: center left;
+    @include standard-image;
+    color: #fff;
+}
+
+#contact .my-contact, #contact .form{
+    padding-bottom: 30px;
+}
+
+.my-contact i {
+    color: #0A9EFE;
+    font-size: 20px;
+}
+
+.my-contact p {
+    margin-bottom: 10px;
+    font-size: 20px
+}
+
+#email-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+#email-link:hover {
+    color: #aaa;
+}
+
+
+.input {
+    border: 0;
+    margin-bottom: 51px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.last-input {
+    margin: 0;
+}
+
+.textarea {
+    height: 252px;
+}
+
+#social-links i{
+    font-size: 50px;
+    padding: 0 20px
+}
+
+.btn {
+    background-color: #0A9EFE;
+    color: #fff;
+    font-weight: bold;
+}

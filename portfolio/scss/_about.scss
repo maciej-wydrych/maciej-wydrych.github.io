@@ -1,0 +1,13 @@
+#my-photo {
+    background-image: url(../img/about/maciej-wydrych.jpg);
+    width: 350px;
+    height: 350px;
+    @include standard-image;
+    background-position: top center;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#about-description {
+    font-size: 20px
+}
