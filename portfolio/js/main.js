@@ -2,6 +2,13 @@
 
 $(function () {
 
+    $('#coin-slider').coinslider({ 
+        width: 900, 
+        height: 500,
+        links: false,
+        
+    });
+    
     $(window).scroll(function () {
         //        var position = window.pageYOffset;
         if ($(window).scrollTop() >= 800) {

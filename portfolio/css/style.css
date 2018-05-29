@@ -172,6 +172,15 @@ section {
     font-style: italic;
 }
 
+#coin-slider {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#coin-slider img {
+    height: 100%;
+}
+
 #contact {
     /*    height: 500px;*/
     background-image: url(../img/contact/keyboard-2923535_1920.jpg);
