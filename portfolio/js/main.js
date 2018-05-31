@@ -3,10 +3,11 @@
 $(function () {
 
     $('#coin-slider').coinslider({ 
-        width: 900, 
+        width: 1000, 
         height: 500,
         links: false,
-        
+        spw: 10,
+        sph: 5,
     });
     
     $(window).scroll(function () {
