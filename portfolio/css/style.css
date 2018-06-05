@@ -94,6 +94,10 @@ section {
     background-color: #eee;
 }
 
+#skills figcaption {
+    padding-bottom: 20px;
+}
+
 .portfolio-frame {
     height: 400px;
     margin-bottom: 30px;
